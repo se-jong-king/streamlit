@@ -1,8 +1,8 @@
 import streamlit as st
 
-from bot.components.sidebar import sidebar
+from components.sidebar import sidebar
 
-from bot.ui import (
+from ui import (
     wrap_doc_in_html,
     is_query_valid,
     is_file_valid,
@@ -10,13 +10,13 @@ from bot.ui import (
     display_file_read_error,
 )
 
-from bot.core.caching import bootstrap_caching
+from core.caching import bootstrap_caching
 
-from bot.core.parsing import read_file
-from bot.core.chunking import chunk_file
-from bot.core.embedding import embed_files
-from bot.core.qa import query_folder
-from bot.core.utils import get_llm
+from core.parsing import read_file
+from core.chunking import chunk_file
+from core.embedding import embed_files
+from core.qa import query_folder
+from core.utils import get_llm
 
 import openai
 from utils.streamlit import append_history, undo, stream_display
