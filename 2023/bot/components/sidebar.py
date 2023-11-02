@@ -1,13 +1,9 @@
 import streamlit as st
 
 from components.faq import faq
-from dotenv import load_dotenv
 import os
 
 from utils.streamlit import append_history, undo, stream_display
-
-load_dotenv()
-
 
 def sidebar():
     with st.sidebar:
