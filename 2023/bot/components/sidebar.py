@@ -1,11 +1,10 @@
 import streamlit as st
 
-from bot.components.faq import faq
+from components.faq import faq
 from dotenv import load_dotenv
 import os
 
 from utils.streamlit import append_history, undo, stream_display
-from bot.functions import functions
 
 load_dotenv()
 
